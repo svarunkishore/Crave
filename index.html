@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="CRAVE — Crunch Beyond Ordinary. Stacked potato chips with familiar Indian flavours.">
+  <title>CRAVE — Crunch Beyond Ordinary</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="progress" id="progress"></div>
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <header class="nav" id="nav">
+    <a class="brand" href="#home" aria-label="CRAVE home"><span>CRAVE</span><i></i></a>
+    <nav class="desktop-nav" aria-label="Primary navigation">
+      <a href="#home">Home</a>
+      <a href="#chips">Chips</a>
+      <a href="#flavours">Flavours</a>
+      <a href="#made">How it's made</a>
+      <a href="#about">About</a>
+    </nav>
+    <button class="nav-cart" id="openCart" type="button" aria-label="Open order basket">Basket <b id="cartCount">0</b></button>
+    <button class="menu-btn" id="menuBtn" type="button" aria-label="Open menu">☰</button>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#home">Home</a><a href="#chips">Chips</a><a href="#flavours">Flavours</a><a href="#made">How it's made</a><a href="#about">About</a>
+  </div>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-noise"></div>
+      <div class="hero-orb orb-a"></div><div class="hero-orb orb-b"></div>
+      <div class="hero-copy reveal">
+        <p class="eyebrow">ENRICHED WITH INDIAN FLAVOURS</p>
+        <h1>CRUNCH<br><em>BEYOND</em><br>ORDINARY.</h1>
+        <p class="hero-sub">Familiar Indian food flavours. A stacked, resealable chip. One bold CRAVE.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#chips">Explore the crunch <span>↗</span></a>
+          <a class="btn btn-ghost" href="#flavours">Find your flavour</a>
+        </div>
+        <div class="hero-meta"><span>100 g</span><span>₹95 MRP</span><span>4 launch flavours</span></div>
+      </div>
+      <div class="hero-product reveal">
+        <div class="hero-ring"></div>
+        <img src="assets/chip-duo.png" class="hero-chip-burst" alt="CRAVE chips and flavours">
+        <img src="assets/gujarati-mango.jpg" class="hero-pack hero-pack-main" alt="CRAVE Gujarati Mango Masala">
+        <div class="hero-price">₹95 <small>100 g</small></div>
+      </div>
+      <div class="scroll-cue"><span></span>SCROLL TO CRAVE</div>
+      <div class="side-fly side-left"><img src="assets/flying-chip-clean.png" alt=""></div>
+      <div class="side-fly side-right"><img src="assets/flying-chip-clean.png" alt=""></div>
+    </section>
+
+    <section class="marquee" aria-label="Brand line">
+      <div>CRAVE · INDIAN FLAVOURS · STACKED CRUNCH · CRAVE · INDIAN FLAVOURS · STACKED CRUNCH · </div>
+    </section>
+
+    <section class="intro section" id="about">
+      <div class="section-kicker">01 / THE IDEA</div>
+      <div class="intro-grid">
+        <div class="reveal">
+          <h2>India, stacked<br><span>into every bite.</span></h2>
+        </div>
+        <div class="intro-copy reveal">
+          <p>CRAVE turns familiar Indian food flavours into a bold potato-chip snack. The brand promise is simple: the flavour name, Indian food reference and chip experience should work together.</p>
+          <p>Built for urban students and early-career adults who enjoy familiar Indian tastes in a new format, CRAVE makes flavour the reason to notice the can — and consistent crunch the reason to return.</p>
+          <a href="#made" class="text-link">See how the flavour is built <span>→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="flavour-stage section" id="flavours">
+      <div class="section-head reveal">
+        <div><div class="section-kicker">02 / FOUR FLAVOURS</div><h2>Pick your <span>mood.</span></h2></div>
+        <p>Four recognisable Indian food cues. One shared chip base. One ₹95 MRP.</p>
+      </div>
+      <div class="flavour-grid">
+        <article class="flavour-card mango reveal" data-flavour="mango">
+          <div class="flavour-image"><img src="assets/gujarati-mango.jpg" alt="Gujarati Mango Masala CRAVE tube"></div>
+          <div class="flavour-overlay"></div>
+          <div class="flavour-info"><span>01</span><h3>Gujarati<br>Mango Masala</h3><p>Sweet-spicy · mango tang · chilli warmth · light mustard note</p><button class="add-btn" data-id="mango">Add to basket · ₹95</button></div>
+        </article>
+        <article class="flavour-card bhel reveal" data-flavour="bhel">
+          <div class="flavour-image"><img src="assets/bombay-bhel.jpg" alt="Bombay Bhel Zing CRAVE tube"></div>
+          <div class="flavour-overlay"></div>
+          <div class="flavour-info"><span>02</span><h3>Bombay<br>Bhel Zing</h3><p>Bright street-snack cue · tamarind · lime · chaat masala</p><button class="add-btn" data-id="bhel">Add to basket · ₹95</button></div>
+        </article>
+        <article class="flavour-card goan reveal" data-flavour="goan">
+          <div class="flavour-image"><img src="assets/goan-herb-lime.jpg" alt="Goan Herb and Lime CRAVE tube"></div>
+          <div class="flavour-overlay"></div>
+          <div class="flavour-info"><span>03</span><h3>Goan<br>Herb &amp; Lime</h3><p>Lighter and tangy · fresh herbs · lime · garlic</p><button class="add-btn" data-id="goan">Add to basket · ₹95</button></div>
+        </article>
+        <article class="flavour-card punjabi reveal" data-flavour="punjabi">
+          <div class="flavour-image"><img src="assets/punjabi-cheese-tikka.jpg" alt="Punjabi Cheese Tikka CRAVE tube"></div>
+          <div class="flavour-overlay"></div>
+          <div class="flavour-info"><span>04</span><h3>Punjabi<br>Cheese Tikka</h3><p>Rich savoury · creamy cheese · smoky tikka spices</p><button class="add-btn" data-id="punjabi">Add to basket · ₹95</button></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="chips section" id="chips">
+      <div class="section-kicker">03 / CHIPS</div>
+      <div class="chips-layout">
+        <div class="chips-copy reveal">
+          <h2>Build your<br><span>CRAVE.</span></h2>
+          <p>Choose a single 100 g flavour at ₹95, or put all four into your basket for the ₹380 four-can pack.</p>
+          <div class="price-pills"><span>100 g · ₹95 each</span><span>4 × 100 g · ₹380</span></div>
+          <button class="btn btn-primary" id="packFour" type="button">Add all four · ₹380 <span>+</span></button>
+          <p class="micro-note">The four-can pack is the full range at the sum of four single-can prices; there is no artificial discount.</p>
+        </div>
+        <div class="product-rack reveal">
+          <div class="rack-glow"></div>
+          <img src="assets/gujarati-mango.jpg" alt="Gujarati Mango Masala" class="rack-img r1">
+          <img src="assets/bombay-bhel.jpg" alt="Bombay Bhel Zing" class="rack-img r2">
+          <img src="assets/goan-herb-lime.jpg" alt="Goan Herb and Lime" class="rack-img r3">
+          <img src="assets/punjabi-cheese-tikka.jpg" alt="Punjabi Cheese Tikka" class="rack-img r4">
+        </div>
+      </div>
+    </section>
+
+    <section class="process section" id="made">
+      <div class="section-head reveal">
+        <div><div class="section-kicker">04 / HOW IT'S MADE</div><h2>One chip base.<br><span>Four flavour worlds.</span></h2></div>
+        <p>This follows the product design described in the report — no invented manufacturing claims.</p>
+      </div>
+      <div class="process-rail">
+        <article class="process-step reveal"><div class="step-no">01</div><div class="step-icon">◒</div><h3>Start with the chip</h3><p>CRAVE uses one common stacked potato-chip base across the launch range.</p></article>
+        <article class="process-step reveal"><div class="step-no">02</div><div class="step-icon">✦</div><h3>Build the flavour</h3><p>Seasoning is weighed per can so the named food cue stays clear and consistent.</p></article>
+        <article class="process-step reveal"><div class="step-no">03</div><div class="step-icon">▣</div><h3>Protect the crunch</h3><p>The stack goes into a rigid food-suitable tube with an inner freshness seal and resealable outer lid.</p></article>
+        <article class="process-step reveal"><div class="step-no">04</div><div class="step-icon">↗</div><h3>Earn the repeat</h3><p>Blind taste testing checks whether people can recognise the food, like it and choose the flavour.</p></article>
+      </div>
+      <div class="flavour-notes">
+        <div><b>MANGO</b><span>mango tang + chilli warmth + light mustard note</span></div>
+        <div><b>BHEL</b><span>tamarind + lime + chaat masala</span></div>
+        <div><b>GOAN</b><span>fresh herbs + lime + garlic</span></div>
+        <div><b>TIKKA</b><span>creamy cheese + smoky tikka spices</span></div>
+      </div>
+    </section>
+
+    <section class="lab section">
+      <div class="lab-card reveal">
+        <div class="lab-copy"><div class="section-kicker">05 / CRAVE LAB</div><h2>Don’t just snack.<br><span>Remix it.</span></h2><p>The report positions CRAVE Lab as a recipe and customer-creation community. Start with four tested snack ideas, then let people submit a photo, ingredients and a short method for review.</p><button class="btn btn-light" id="recipeBtn" type="button">Open the recipe wall ↗</button></div>
+        <div class="lab-visual"><div class="lab-orbit"></div><img src="assets/chips-spice-burst.png" alt="CRAVE chip flavour ingredients"></div>
+      </div>
+    </section>
+
+    <section class="about section">
+      <div class="section-kicker">06 / ABOUT CRAVE</div>
+      <div class="about-grid">
+        <div class="about-stat reveal"><strong>18–30</strong><span>Primary audience</span><small>Urban students &amp; early-career food explorers</small></div>
+        <div class="about-stat reveal"><strong>₹95</strong><span>Fixed MRP</span><small>100 g single can across all four launch flavours</small></div>
+        <div class="about-stat reveal"><strong>₹380</strong><span>Full range</span><small>Four-can e-commerce pack, one of each flavour</small></div>
+        <div class="about-stat reveal"><strong>4</strong><span>Launch flavours</span><small>Gujarati · Bombay · Goan · Punjabi</small></div>
+      </div>
+      <div class="about-footer reveal"><p><b>Positioning:</b> for young adults bored with routine chip flavours, CRAVE is a canned potato-chip range with familiar Indian food tastes. Clear names and colourful cans prompt trial; recognisable flavour, reliable crunch and a resealable pack earn repeat purchase.</p><span>CRUNCH BEYOND ORDINARY.</span></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div><span class="footer-logo">CRAVE</span><p>Enriched with Indian flavours.</p></div>
+    <div class="footer-links"><a href="#home">Home</a><a href="#chips">Chips</a><a href="#flavours">Flavours</a><a href="#made">How it's made</a><a href="#about">About</a></div>
+    <div class="footer-tag">More than a snack.<br><b>It’s a CRAVE.</b></div>
+  </footer>
+
+  <div class="cart-drawer" id="cartDrawer" aria-hidden="true">
+    <div class="drawer-backdrop" id="closeCartBackdrop"></div>
+    <aside class="drawer-panel">
+      <div class="drawer-head"><div><span class="section-kicker">YOUR CRAVE</span><h2>Basket</h2></div><button id="closeCart" class="icon-btn" type="button">×</button></div>
+      <div id="cartItems" class="cart-items"></div>
+      <div class="cart-summary"><div><span>Subtotal</span><strong id="cartTotal">₹0</strong></div><div class="cart-pack-note" id="packNote">Add a can to begin.</div><button class="btn btn-primary full" id="checkoutBtn" type="button">Continue to order</button></div>
+    </aside>
+  </div>
+
+  <div class="modal" id="checkoutModal" aria-hidden="true">
+    <div class="modal-card">
+      <button class="icon-btn modal-close" id="closeCheckout" type="button">×</button>
+      <div class="section-kicker">ORDER REQUEST</div><h2>Finish your CRAVE.</h2>
+      <p class="modal-note">This front-end order flow is a functional demo. The report specifies that CRAVE Lab points buyers to stockists and platform listings rather than acting as a direct shop; no real payment or fulfilment service was supplied.</p>
+      <form id="checkoutForm">
+        <label>Name<input name="name" required placeholder="Your name"></label>
+        <label>Mobile<input name="phone" required inputmode="tel" placeholder="10-digit mobile"></label>
+        <label>Preferred route<select name="route" required><option value="">Choose</option><option>Quick commerce</option><option>E-commerce four-can pack</option><option>Store / stockist</option></select></label>
+        <label>Notes<textarea name="notes" rows="3" placeholder="Flavour preference or delivery note"></textarea></label>
+        <button class="btn btn-primary full" type="submit">Place order request ↗</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status"></div>
+  <script src="script.js"></script>
+</body>
+</html>
